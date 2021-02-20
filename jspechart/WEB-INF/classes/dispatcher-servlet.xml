@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" 
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd 
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- 处理器适配器：HandlerAdapter。所有处理器适配器都实现了HandlerAdapter接口-->
+    <!--SimpleControllerHandlerAdapter适配器能执行实现了Controller接口的Handler 
+    所以，现在配置了这个适配器的话，所有的处理器Handler必须要实现Controller接口才行。
+-->
+<context:component-scan base-package="com.mvc.controller" />
+   <!-- 这里配置使用servlet默认的静态资源处理方式-->
+    <mvc:default-servlet-handler/>
+    <mvc:annotation-driven />
+
+
+    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />
+	<!-- 配置处理器映射器
+    将bean的name作为url进行查找，需要在配置Handler时指定beanname（就是url）
+ -->
+	<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
+<!-- 配置视图解析器 
+        进行jsp解析，默认使用jstl标签，classpath下得有jstl的包
+    -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" />
+	<bean name="/ajaxTest.do" class="com.mvc.controller.TestAjaxController" />
+</beans>

@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档,测试一个基于AJAX的JS小框架</title>
+
+<link href="res/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="res/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<link href="res/font_awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+<script language="JavaScript" src="res/js/jquery-3.1.1.js"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script lang="JavaScript" src="res/bootstrap/js/bootstrap.js"></script>
+<script language="JavaScript" src="res/js/sat.core.js"></script>
+<script language="JavaScript" src="res/js/sat.create.js"></script>
+<script language="JavaScript" src="res/js/sat.drf.js"></script>
+<script language="JavaScript" src="res/js/sat.update.js"></script>
+
+<body>
+<div id="problem"></div>
+
+<div id="yourproblem"></div>
+
+<script>
+var descriptions = [{ text: '不使用描述', value: null }]
+var samples = [{ text: '不使用样例', value: null }]
+
+function getOptionsDescription(ret) {
+  var results = ret.results
+  for (var i in results) {
+    var obj = results[i]
+    var text = obj.id + ': ' + obj.title
+    var value = obj.id
+    descriptions.push({ text: text, value: value })
+  }
+  return descriptions
+}
+
+function getOptionsSample(ret) {
+  var results = ret.results
+  for (var i in results) {
+    var obj = results[i]
+    var text = obj.id + ': ' + obj.title
+    var value = obj.id
+    samples.push({ text: text, value: value })
+  }
+  return samples
+}
+var json = [
+    {
+        "CityId": 18, 
+        "CityName": "西安", 
+        "ProvinceId": 27, 
+        "CityOrder": 1
+    }, 
+    {
+        "CityId": 53, 
+        "CityName": "广州", 
+        "ProvinceId": 27, 
+        "CityOrder": 1
+    }
+]
+
+console.log(json[0].CityId)
+console.log(json[0].CityName)
+
+
+function testJson(jsonObject){
+/*console.log(json[0].CityId)
+console.log(json[0].CityName)
+*/
+var samples=[]
+var arrTemp=[]
+
+for(var name in jsonObject){
+    var temp = {
+        key:name,
+        value:jsonObject[name]
+    }
+    arrTemp.push(temp); 
+}
+/*
+for (var i in results) {
+    var obj = results[i]
+    var text = obj.id + ': ' + obj.title
+    var value = obj.id
+    samples.push({ text: text, value: value })
+  }
+  */
+  console.log("arrTemp:"+arrTemp);
+  console.log("arrTemp.toString():"+arrTemp.toString());
+  return arrTemp
+}
+
+
+//var jsonData = '{"results":{"id":"it-homer","title":"25"}}';
+var jsonData ='{'+
+'"name1":{"id":"id-homer1","title":"title1"},'+
+'"name2":{"id":"id-homer2","title":"title2"},'+
+'"name3":{"id":"id-homer3","title":"title3"}'+
+'}';
+
+
+function makeJson(jsonData){
+//var json=eval("("+jsonString+")")
+	var jsonObj = JSON.parse(jsonData);
+	return jsonObj;
+}
+
+function testJson1(){
+
+	var jsonObj=makeJson(jsonData);
+	console.log("jsonObj:"+jsonObj);
+	var jsonObjStr=JSON.stringify(jsonObj);
+	console.log("jsonObjStr:"+jsonObjStr);
+	//console.log("jsonObj.results.id: "+jsonObj.results.id);
+	//console.log("jsonObj.results.title: "+jsonObj.results.title);
+	var samples=testJson(jsonObj);
+	var name="namex"
+	var i=2;
+	console.log("name+i:"+name+i)
+	var con="name"+i
+	var evalStr='samples['+i+'].'+con+".id"
+	console.log("evalStr:"+evalStr)
+	console.log("samples[2].key: "+samples[2].key)
+	var eValue=eval('samples['+i+'].'+"key")
+	console.log(eValue)
+	
+	for (let i = 0; i < samples.length; i++) {
+            console.log("samples["+i+"]:"+samples[i].toString())
+			var eValue=eval('samples['+i+'].'+"key")
+			console.log("key:"+eValue) 
+			
+			var eValue1=eval('samples['+i+'].'+"value")
+			console.log("value:"+eValue1)
+			
+			var eValue2=eValue1["id"]
+			console.log("value id:"+eValue2)
+			
+			var eValue3=eValue1["title"]
+			console.log("value title:"+eValue3)
+			
+			//alert(eValue); 
+			//console.log(" id:"+samples[i].("name"+i).id+" title:"+samples[i].("name"+i).title)
+        }
+
+}
+
+function testLocationChange(){
+
+//window.location="http://www.baidu.com";
+
+window.location="#";
+}
+
+function testDRFTable(){
+SATable.DRFTable({
+  id: 'problem',
+  title: '题目',
+  url: '/jspechart/ajaxTest.do',
+  search: true,
+  filters: [
+    { name: 'creator', type: 'text', placeholder: '请输入创建者用户名', caption: '创建者' },
+    { name: 'updater', type: 'text', placeholder: '请输入更新者用户名', caption: '更新者' }
+  ],
+  columns: [
+    { name: 'id', caption: 'ID', sort: true, ordering: 1, type: 'Link', typeInfo: { base_url: '/home/', key: 'id' } },
+    { name: 'title', caption: '标题', sort: true, type: 'Link', typeInfo: { base_url: '/home/', key: 'id' } },
+    { name: 'available', caption: '对外可用', type: 'Boolean' },
+    { name: 'create_time', caption: '创建时间', sort: true, type: 'Datetime' },
+    { name: 'update_time', caption: '更新时间', sort: true, type: 'Datetime' },
+  ],
+  createURL: '/'
+})
+}
+
+function testSimpleAjaxForm(){
+SATable.SimpleAjaxForm({
+  id: 'yourproblem',
+  title: '题目',
+  search: true,
+  filters: [
+    { name: 'creator', type: 'text', placeholder: '请输入创建者用户名', caption: '创建者' },
+    { name: 'updater', type: 'text', placeholder: '请输入更新者用户名', caption: '更新者' }
+  ],
+  columns: [
+    { name: 'id', caption: 'ID', sort: true, ordering: 1, type: 'Link', typeInfo: { base_url: '/home/', key: 'id' } },
+    { name: 'title', caption: '标题', sort: true, type: 'Link', typeInfo: { base_url: '/home/', key: 'id' } },
+    { name: 'available', caption: '对外可用', type: 'Boolean' },
+    { name: 'create_time', caption: '创建时间', sort: true, type: 'Datetime' },
+    { name: 'update_time', caption: '更新时间', sort: true, type: 'Datetime' },
+  ],
+  createURL: '/',
+  requestGenerator: function(request) {
+    // SOME CODE ...
+  },
+  dataGenerator: function(data) {
+    // SOME CODE ...
+	console.log("-- - testSimpleAjaxForm()- - ");
+	console.log("data:"+data)
+  }
+})
+}
+
+/**
+SATable.SimpleAjaxForm({
+  id: 'problem',
+  method: 'POST',
+  toSuccess: '#',
+  url: '/api-admin/meta-problems/1/problems/',
+  items: [
+    { name: 'available', caption: '可用', type: 'Boolean', defaultTrue: true },
+    { name: 'title', caption: '标题', type: 'Text', typeInfo: { max_length: 128 } },
+    { name: 'introduction', caption: '简介', type: 'Text', typeInfo: { max_length: 512 } },
+    { name: 'source', caption: '来源', type: 'Text', typeInfo: { max_length: 256 }},
+    { name: 'author', caption: '作者', type: 'Text', typeInfo: { max_length: 64 } },
+    {
+      name: 'description_id',
+      caption: '描述',
+      type: 'Select',
+      typeInfo: {
+        ajax: true,
+        ajaxInfo: {
+          type: 'GET',
+          url: '/getAjax/',
+          dataType: 'json'
+        },
+        responseHandler: SATable.DRF.keepRequest,
+        dataGenerator: getOptionsDescription
+      }
+    },
+    {
+      name: 'sample_id',
+      caption: '样例',
+      type: 'Select',
+      typeInfo: {
+        ajax: true,
+        ajaxInfo: {
+          type: 'GET',
+          url: '/api-admin/meta-problems/1/samples/',
+          dataType: 'json'
+        },
+        responseHandler: SATable.DRF.keepRequest,
+        dataGenerator: getOptionsSample
+      }
+    }
+  ]
+})
+**/
+
+
+</script>
+
+
+<div>
+	<div>
+		<p>
+          <input type="button" class="button" value="testJson1()"
+              onclick="testJson1()" />
+          </p>
+		  
+		  <p>
+            <input type="button" class="button" value="testLocationChange()"
+              onclick="testLocationChange()" />
+          </p>
+		
+		<p>
+            <input type="button" class="button" value="testDRFTable()"
+              onclick="testDRFTable()" />
+          </p>
+		  <p>
+            <input type="button" class="button" value="testSimpleAjaxForm()"
+              onclick="testSimpleAjaxForm()" />
+          </p>
+
+		  
+      </div>
+
+
+	<div>
+		时间会被定时更新
+	</div>
+
+	<div>
+		<input type="text" id="clock" />
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+2021-02-01 15:56:51  [ http-apr-8082-exec-6:1166982 ] - [ ERROR ]  sdate:2020-09-24 edate:2020-09-24
+2021-02-01 16:22:48  [ http-apr-8082-exec-1:2724093 ] - [ ERROR ]  sdate:2020-08-01 edate:2020-10-01
+2021-02-01 16:22:48  [ http-apr-8082-exec-1:2724109 ] - [ ERROR ]  fetching data from Redis not null
+2021-02-01 17:49:45  [ http-apr-8082-exec-3:273899 ] - [ ERROR ]  sdate:2020-08-01 edate:2020-10-01
+2021-02-01 17:49:45  [ http-apr-8082-exec-3:273925 ] - [ ERROR ]  data in redis is null,using DB
+2021-02-01 17:49:45  [ http-apr-8082-exec-3:273926 ] - [ ERROR ]  fetching data from DB
+2021-02-01 17:50:27  [ http-apr-8082-exec-5:316039 ] - [ ERROR ]  sdate:2020-01-01 edate:2020-12-31
+2021-02-01 17:50:27  [ http-apr-8082-exec-5:316045 ] - [ ERROR ]  data in redis is null,using DB
+2021-02-01 17:50:27  [ http-apr-8082-exec-5:316046 ] - [ ERROR ]  fetching data from DB
+2021-02-01 17:59:10  [ http-apr-8082-exec-8:839361 ] - [ ERROR ]  sdate:2020-09-01 edate:2020-09-30
+2021-02-01 17:59:10  [ http-apr-8082-exec-8:839366 ] - [ ERROR ]  data in redis is null,using DB
+2021-02-01 17:59:10  [ http-apr-8082-exec-8:839366 ] - [ ERROR ]  fetching data from DB
+2021-02-01 18:11:07  [ http-apr-8082-exec-4:1556299 ] - [ ERROR ]  sdate:2020-01-01 edate:2020-12-31
+2021-02-01 18:11:07  [ http-apr-8082-exec-4:1556449 ] - [ ERROR ]  fetching data from Redis not null
+2021-02-01 18:11:07  [ http-apr-8082-exec-4:1556454 ] - [ ERROR ]   validdate==null
+2021-02-01 18:11:07  [ http-apr-8082-exec-4:1556455 ] - [ ERROR ]  fetching data from DB
+2021-02-01 18:11:55  [ http-apr-8082-exec-7:1604239 ] - [ ERROR ]  sdate:2020-09-01 edate:2020-09-30
+2021-02-01 18:11:55  [ http-apr-8082-exec-7:1604244 ] - [ ERROR ]  fetching data from Redis not null
+2021-02-01 18:11:55  [ http-apr-8082-exec-7:1604248 ] - [ ERROR ]   validdate==null
+2021-02-01 18:11:55  [ http-apr-8082-exec-7:1604249 ] - [ ERROR ]  fetching data from DB

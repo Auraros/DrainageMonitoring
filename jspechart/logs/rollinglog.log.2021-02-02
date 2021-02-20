@@ -1,0 +1,618 @@
+2021-02-02 00:26:01  [ localhost-startStop-2:24050071 ] - [ INFO ]  Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Feb 01 17:45:11 CST 2021]; root of context hierarchy
+2021-02-02 00:26:01  [ localhost-startStop-2:24050074 ] - [ DEBUG ]  Publishing event in WebApplicationContext for namespace 'dispatcher-servlet': org.springframework.context.event.ContextClosedEvent[source=WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Feb 01 17:45:11 CST 2021]; root of context hierarchy]
+2021-02-02 00:26:01  [ localhost-startStop-2:24050075 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2021-02-02 00:26:01  [ localhost-startStop-2:24050075 ] - [ DEBUG ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@75b4252e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,mvcCorsConfigurations,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcHandlerMappingIntrospector,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,/listAll.do,/addNew.do,/AddNewForm.do,/deleteUser.do,/updateUser.do,/updateUserForm.do,/searchUserForm.do,/searchUser.do,/login.do,/logout.do,/loginFailure.do,/loginForm.do,/empMessage.do,/echart.do,/echartApt.do,/test.do]; root of factory hierarchy
+2021-02-02 11:00:21  [ localhost-startStop-1:1582 ] - [ DEBUG ]  - - - - - -- testing: EchartAptController: web_home:D:\apache-tomcat-7.0.105\webapps\jspechart\
+2021-02-02 11:00:21  [ localhost-startStop-1:1681 ] - [ DEBUG ]  Eagerly caching bean '/echartApt.do' to allow for resolving potential circular references
+2021-02-02 11:00:21  [ localhost-startStop-1:1759 ] - [ DEBUG ]  Getting BeanInfo for class [com.mvc.controller.EchartAptController]
+2021-02-02 11:00:21  [ localhost-startStop-1:1809 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.mvc.controller.EchartAptController]
+2021-02-02 11:00:21  [ localhost-startStop-1:1859 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:21  [ localhost-startStop-1:1907 ] - [ DEBUG ]  Finished creating instance of bean '/echartApt.do'
+2021-02-02 11:00:21  [ localhost-startStop-1:1969 ] - [ INFO ]  Mapped URL path [/echartApt.do] onto handler '/echartApt.do'
+2021-02-02 11:00:22  [ localhost-startStop-1:2016 ] - [ DEBUG ]  Creating shared instance of singleton bean '/test.do'
+2021-02-02 11:00:22  [ localhost-startStop-1:2078 ] - [ DEBUG ]  Creating instance of bean '/test.do'
+2021-02-02 11:00:22  [ localhost-startStop-1:2140 ] - [ DEBUG ]  Eagerly caching bean '/test.do' to allow for resolving potential circular references
+2021-02-02 11:00:22  [ localhost-startStop-1:2216 ] - [ DEBUG ]  Getting BeanInfo for class [com.mvc.controller.TestController]
+2021-02-02 11:00:22  [ localhost-startStop-1:2265 ] - [ DEBUG ]  Caching PropertyDescriptors for class [com.mvc.controller.TestController]
+2021-02-02 11:00:22  [ localhost-startStop-1:2311 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:22  [ localhost-startStop-1:2359 ] - [ DEBUG ]  Finished creating instance of bean '/test.do'
+2021-02-02 11:00:22  [ localhost-startStop-1:2420 ] - [ INFO ]  Mapped URL path [/test.do] onto handler '/test.do'
+2021-02-02 11:00:22  [ localhost-startStop-1:2467 ] - [ DEBUG ]  Rejected bean name 'environment': no URL paths identified
+2021-02-02 11:00:22  [ localhost-startStop-1:2528 ] - [ DEBUG ]  Rejected bean name 'systemProperties': no URL paths identified
+2021-02-02 11:00:22  [ localhost-startStop-1:2590 ] - [ DEBUG ]  Rejected bean name 'systemEnvironment': no URL paths identified
+2021-02-02 11:00:22  [ localhost-startStop-1:2652 ] - [ DEBUG ]  Rejected bean name 'servletContext': no URL paths identified
+2021-02-02 11:00:22  [ localhost-startStop-1:2715 ] - [ DEBUG ]  Rejected bean name 'servletConfig': no URL paths identified
+2021-02-02 11:00:22  [ localhost-startStop-1:2777 ] - [ DEBUG ]  Rejected bean name 'contextParameters': no URL paths identified
+2021-02-02 11:00:22  [ localhost-startStop-1:2841 ] - [ DEBUG ]  Rejected bean name 'contextAttributes': no URL paths identified
+2021-02-02 11:00:22  [ localhost-startStop-1:2905 ] - [ DEBUG ]  Rejected bean name 'messageSource': no URL paths identified
+2021-02-02 11:00:22  [ localhost-startStop-1:2968 ] - [ DEBUG ]  Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2021-02-02 11:00:23  [ localhost-startStop-1:3031 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2021-02-02 11:00:23  [ localhost-startStop-1:3108 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2021-02-02 11:00:23  [ localhost-startStop-1:3187 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2021-02-02 11:00:23  [ localhost-startStop-1:3264 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter' to allow for resolving potential circular references
+2021-02-02 11:00:23  [ localhost-startStop-1:3341 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter]
+2021-02-02 11:00:23  [ localhost-startStop-1:3403 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter]
+2021-02-02 11:00:23  [ localhost-startStop-1:3466 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:23  [ localhost-startStop-1:3516 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2021-02-02 11:00:23  [ localhost-startStop-1:3595 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2021-02-02 11:00:23  [ localhost-startStop-1:3673 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2021-02-02 11:00:23  [ localhost-startStop-1:3752 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter' to allow for resolving potential circular references
+2021-02-02 11:00:23  [ localhost-startStop-1:3832 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter]
+2021-02-02 11:00:23  [ localhost-startStop-1:3896 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter]
+2021-02-02 11:00:23  [ localhost-startStop-1:3959 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:23  [ localhost-startStop-1:4006 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2021-02-02 11:00:24  [ localhost-startStop-1:4085 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2021-02-02 11:00:24  [ localhost-startStop-1:4148 ] - [ DEBUG ]  Creating instance of bean 'mvcContentNegotiationManager'
+2021-02-02 11:00:24  [ localhost-startStop-1:4211 ] - [ DEBUG ]  Eagerly caching bean 'mvcContentNegotiationManager' to allow for resolving potential circular references
+2021-02-02 11:00:24  [ localhost-startStop-1:4288 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]
+2021-02-02 11:00:24  [ localhost-startStop-1:4352 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]
+2021-02-02 11:00:24  [ localhost-startStop-1:4417 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:24  [ localhost-startStop-1:4465 ] - [ DEBUG ]  Found bean property 'defaultContentType' of type [org.springframework.http.MediaType]
+2021-02-02 11:00:24  [ localhost-startStop-1:4528 ] - [ DEBUG ]  Found bean property 'defaultContentTypeStrategy' of type [org.springframework.web.accept.ContentNegotiationStrategy]
+2021-02-02 11:00:24  [ localhost-startStop-1:4592 ] - [ DEBUG ]  Found bean property 'favorParameter' of type [boolean]
+2021-02-02 11:00:24  [ localhost-startStop-1:4641 ] - [ DEBUG ]  Found bean property 'favorPathExtension' of type [boolean]
+2021-02-02 11:00:24  [ localhost-startStop-1:4689 ] - [ DEBUG ]  Found bean property 'ignoreAcceptHeader' of type [boolean]
+2021-02-02 11:00:24  [ localhost-startStop-1:4736 ] - [ DEBUG ]  Found bean property 'ignoreUnknownPathExtensions' of type [boolean]
+2021-02-02 11:00:24  [ localhost-startStop-1:4786 ] - [ DEBUG ]  Found bean property 'mediaTypes' of type [java.util.Properties]
+2021-02-02 11:00:24  [ localhost-startStop-1:4833 ] - [ DEBUG ]  Found bean property 'object' of type [org.springframework.web.accept.ContentNegotiationManager]
+2021-02-02 11:00:24  [ localhost-startStop-1:4903 ] - [ DEBUG ]  Found bean property 'objectType' of type [java.lang.Class]
+2021-02-02 11:00:24  [ localhost-startStop-1:4951 ] - [ DEBUG ]  Found bean property 'parameterName' of type [java.lang.String]
+2021-02-02 11:00:24  [ localhost-startStop-1:4998 ] - [ DEBUG ]  Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+2021-02-02 11:00:25  [ localhost-startStop-1:5046 ] - [ DEBUG ]  Found bean property 'singleton' of type [boolean]
+2021-02-02 11:00:25  [ localhost-startStop-1:5094 ] - [ DEBUG ]  Found bean property 'useJaf' of type [boolean]
+2021-02-02 11:00:25  [ localhost-startStop-1:5150 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'mvcContentNegotiationManager'
+2021-02-02 11:00:25  [ localhost-startStop-1:5215 ] - [ DEBUG ]  Finished creating instance of bean 'mvcContentNegotiationManager'
+2021-02-02 11:00:25  [ localhost-startStop-1:5278 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-02-02 11:00:25  [ localhost-startStop-1:5355 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-02-02 11:00:25  [ localhost-startStop-1:5445 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' to allow for resolving potential circular references
+2021-02-02 11:00:25  [ localhost-startStop-1:5523 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]
+2021-02-02 11:00:25  [ localhost-startStop-1:5592 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]
+2021-02-02 11:00:25  [ localhost-startStop-1:5656 ] - [ DEBUG ]  Found bean property 'alwaysUseFullPath' of type [boolean]
+2021-02-02 11:00:25  [ localhost-startStop-1:5703 ] - [ DEBUG ]  Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2021-02-02 11:00:25  [ localhost-startStop-1:5766 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:25  [ localhost-startStop-1:5813 ] - [ DEBUG ]  Found bean property 'contentNegotiationManager' of type [org.springframework.web.accept.ContentNegotiationManager]
+2021-02-02 11:00:25  [ localhost-startStop-1:5877 ] - [ DEBUG ]  Found bean property 'corsConfigurations' of type [java.util.Map]
+2021-02-02 11:00:25  [ localhost-startStop-1:5924 ] - [ DEBUG ]  Found bean property 'corsProcessor' of type [org.springframework.web.cors.CorsProcessor]
+2021-02-02 11:00:25  [ localhost-startStop-1:5986 ] - [ DEBUG ]  Found bean property 'defaultHandler' of type [java.lang.Object]
+2021-02-02 11:00:26  [ localhost-startStop-1:6033 ] - [ DEBUG ]  Found bean property 'detectHandlerMethodsInAncestorContexts' of type [boolean]
+2021-02-02 11:00:26  [ localhost-startStop-1:6081 ] - [ DEBUG ]  Found bean property 'embeddedValueResolver' of type [org.springframework.util.StringValueResolver]
+2021-02-02 11:00:26  [ localhost-startStop-1:6143 ] - [ DEBUG ]  Found bean property 'fileExtensions' of type [java.util.List]
+2021-02-02 11:00:26  [ localhost-startStop-1:6190 ] - [ DEBUG ]  Found bean property 'handlerMethodMappingNamingStrategy' of type [org.springframework.web.servlet.handler.HandlerMethodMappingNamingStrategy]
+2021-02-02 11:00:26  [ localhost-startStop-1:6254 ] - [ DEBUG ]  Found bean property 'handlerMethods' of type [java.util.Map]
+2021-02-02 11:00:26  [ localhost-startStop-1:6301 ] - [ DEBUG ]  Found bean property 'interceptors' of type [[Ljava.lang.Object;]
+2021-02-02 11:00:26  [ localhost-startStop-1:6348 ] - [ DEBUG ]  Found bean property 'namingStrategy' of type [org.springframework.web.servlet.handler.HandlerMethodMappingNamingStrategy]
+2021-02-02 11:00:26  [ localhost-startStop-1:6410 ] - [ DEBUG ]  Found bean property 'order' of type [int]
+2021-02-02 11:00:26  [ localhost-startStop-1:6457 ] - [ DEBUG ]  Found bean property 'pathMatcher' of type [org.springframework.util.PathMatcher]
+2021-02-02 11:00:26  [ localhost-startStop-1:6518 ] - [ DEBUG ]  Found bean property 'removeSemicolonContent' of type [boolean]
+2021-02-02 11:00:26  [ localhost-startStop-1:6564 ] - [ DEBUG ]  Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+2021-02-02 11:00:26  [ localhost-startStop-1:6611 ] - [ DEBUG ]  Found bean property 'urlDecode' of type [boolean]
+2021-02-02 11:00:26  [ localhost-startStop-1:6659 ] - [ DEBUG ]  Found bean property 'urlPathHelper' of type [org.springframework.web.util.UrlPathHelper]
+2021-02-02 11:00:26  [ localhost-startStop-1:6721 ] - [ DEBUG ]  Found bean property 'useRegisteredSuffixPatternMatch' of type [boolean]
+2021-02-02 11:00:26  [ localhost-startStop-1:6769 ] - [ DEBUG ]  Found bean property 'useSuffixPatternMatch' of type [boolean]
+2021-02-02 11:00:26  [ localhost-startStop-1:6816 ] - [ DEBUG ]  Found bean property 'useTrailingSlashMatch' of type [boolean]
+2021-02-02 11:00:26  [ localhost-startStop-1:6868 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2021-02-02 11:00:26  [ localhost-startStop-1:6915 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcCorsConfigurations'
+2021-02-02 11:00:26  [ localhost-startStop-1:6962 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2021-02-02 11:00:27  [ localhost-startStop-1:7024 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-02-02 11:00:27  [ localhost-startStop-1:7103 ] - [ DEBUG ]  Looking for request mappings in application context: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Feb 02 11:00:20 CST 2021]; root of context hierarchy
+2021-02-02 11:00:27  [ localhost-startStop-1:7198 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-02-02 11:00:27  [ localhost-startStop-1:7278 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2021-02-02 11:00:27  [ localhost-startStop-1:7343 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2021-02-02 11:00:27  [ localhost-startStop-1:7420 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2021-02-02 11:00:27  [ localhost-startStop-1:7802 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' to allow for resolving potential circular references
+2021-02-02 11:00:27  [ localhost-startStop-1:7880 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]
+2021-02-02 11:00:27  [ localhost-startStop-1:7952 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]
+2021-02-02 11:00:28  [ localhost-startStop-1:8016 ] - [ DEBUG ]  Found bean property 'alwaysMustRevalidate' of type [boolean]
+2021-02-02 11:00:28  [ localhost-startStop-1:8063 ] - [ DEBUG ]  Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2021-02-02 11:00:28  [ localhost-startStop-1:8125 ] - [ DEBUG ]  Found bean property 'argumentResolvers' of type [java.util.List]
+2021-02-02 11:00:28  [ localhost-startStop-1:8172 ] - [ DEBUG ]  Found bean property 'asyncRequestTimeout' of type [long]
+2021-02-02 11:00:28  [ localhost-startStop-1:8220 ] - [ DEBUG ]  Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2021-02-02 11:00:28  [ localhost-startStop-1:8282 ] - [ DEBUG ]  Found bean property 'cacheControl' of type [org.springframework.http.CacheControl]
+2021-02-02 11:00:28  [ localhost-startStop-1:8343 ] - [ DEBUG ]  Found bean property 'cacheSeconds' of type [int]
+2021-02-02 11:00:28  [ localhost-startStop-1:8378 ] - [ DEBUG ]  Found bean property 'cacheSecondsForSessionAttributeHandlers' of type [int]
+2021-02-02 11:00:28  [ localhost-startStop-1:8425 ] - [ DEBUG ]  Found bean property 'callableInterceptors' of type [java.util.List]
+2021-02-02 11:00:28  [ localhost-startStop-1:8472 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:28  [ localhost-startStop-1:8518 ] - [ DEBUG ]  Found bean property 'contentNegotiationManager' of type [org.springframework.web.accept.ContentNegotiationManager]
+2021-02-02 11:00:28  [ localhost-startStop-1:8581 ] - [ DEBUG ]  Found bean property 'customArgumentResolvers' of type [java.util.List]
+2021-02-02 11:00:28  [ localhost-startStop-1:8628 ] - [ DEBUG ]  Found bean property 'customReturnValueHandlers' of type [java.util.List]
+2021-02-02 11:00:28  [ localhost-startStop-1:8674 ] - [ DEBUG ]  Found bean property 'deferredResultInterceptors' of type [java.util.List]
+2021-02-02 11:00:28  [ localhost-startStop-1:8721 ] - [ DEBUG ]  Found bean property 'ignoreDefaultModelOnRedirect' of type [boolean]
+2021-02-02 11:00:28  [ localhost-startStop-1:8768 ] - [ DEBUG ]  Found bean property 'initBinderArgumentResolvers' of type [java.util.List]
+2021-02-02 11:00:28  [ localhost-startStop-1:8815 ] - [ DEBUG ]  Found bean property 'messageConverters' of type [java.util.List]
+2021-02-02 11:00:28  [ localhost-startStop-1:8862 ] - [ DEBUG ]  Found bean property 'modelAndViewResolvers' of type [java.util.List]
+2021-02-02 11:00:28  [ localhost-startStop-1:8908 ] - [ DEBUG ]  Found bean property 'order' of type [int]
+2021-02-02 11:00:28  [ localhost-startStop-1:8955 ] - [ DEBUG ]  Found bean property 'parameterNameDiscoverer' of type [org.springframework.core.ParameterNameDiscoverer]
+2021-02-02 11:00:29  [ localhost-startStop-1:9018 ] - [ DEBUG ]  Found bean property 'requestBodyAdvice' of type [java.util.List]
+2021-02-02 11:00:29  [ localhost-startStop-1:9080 ] - [ DEBUG ]  Found bean property 'requireSession' of type [boolean]
+2021-02-02 11:00:29  [ localhost-startStop-1:9127 ] - [ DEBUG ]  Found bean property 'responseBodyAdvice' of type [java.util.List]
+2021-02-02 11:00:29  [ localhost-startStop-1:9174 ] - [ DEBUG ]  Found bean property 'returnValueHandlers' of type [java.util.List]
+2021-02-02 11:00:29  [ localhost-startStop-1:9220 ] - [ DEBUG ]  Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+2021-02-02 11:00:29  [ localhost-startStop-1:9267 ] - [ DEBUG ]  Found bean property 'sessionAttributeStore' of type [org.springframework.web.bind.support.SessionAttributeStore]
+2021-02-02 11:00:29  [ localhost-startStop-1:9330 ] - [ DEBUG ]  Found bean property 'supportedMethods' of type [[Ljava.lang.String;]
+2021-02-02 11:00:29  [ localhost-startStop-1:9387 ] - [ DEBUG ]  Found bean property 'synchronizeOnSession' of type [boolean]
+2021-02-02 11:00:29  [ localhost-startStop-1:9434 ] - [ DEBUG ]  Found bean property 'taskExecutor' of type [org.springframework.core.task.AsyncTaskExecutor]
+2021-02-02 11:00:29  [ localhost-startStop-1:9496 ] - [ DEBUG ]  Found bean property 'useCacheControlHeader' of type [boolean]
+2021-02-02 11:00:29  [ localhost-startStop-1:9543 ] - [ DEBUG ]  Found bean property 'useCacheControlNoStore' of type [boolean]
+2021-02-02 11:00:29  [ localhost-startStop-1:9590 ] - [ DEBUG ]  Found bean property 'useExpiresHeader' of type [boolean]
+2021-02-02 11:00:29  [ localhost-startStop-1:9637 ] - [ DEBUG ]  Found bean property 'varyByRequestHeaders' of type [[Ljava.lang.String;]
+2021-02-02 11:00:29  [ localhost-startStop-1:9684 ] - [ DEBUG ]  Found bean property 'webBindingInitializer' of type [org.springframework.web.bind.support.WebBindingInitializer]
+2021-02-02 11:00:29  [ localhost-startStop-1:9752 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2021-02-02 11:00:29  [ localhost-startStop-1:9800 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#15b17e8e'
+2021-02-02 11:00:29  [ localhost-startStop-1:9867 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.bind.support.ConfigurableWebBindingInitializer]
+2021-02-02 11:00:29  [ localhost-startStop-1:9933 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.bind.support.ConfigurableWebBindingInitializer]
+2021-02-02 11:00:29  [ localhost-startStop-1:9995 ] - [ DEBUG ]  Found bean property 'autoGrowNestedPaths' of type [boolean]
+2021-02-02 11:00:30  [ localhost-startStop-1:10041 ] - [ DEBUG ]  Found bean property 'bindingErrorProcessor' of type [org.springframework.validation.BindingErrorProcessor]
+2021-02-02 11:00:30  [ localhost-startStop-1:10103 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:30  [ localhost-startStop-1:10150 ] - [ DEBUG ]  Found bean property 'conversionService' of type [org.springframework.core.convert.ConversionService]
+2021-02-02 11:00:30  [ localhost-startStop-1:10212 ] - [ DEBUG ]  Found bean property 'directFieldAccess' of type [boolean]
+2021-02-02 11:00:30  [ localhost-startStop-1:10259 ] - [ DEBUG ]  Found bean property 'messageCodesResolver' of type [org.springframework.validation.MessageCodesResolver]
+2021-02-02 11:00:30  [ localhost-startStop-1:10321 ] - [ DEBUG ]  Found bean property 'propertyEditorRegistrar' of type [org.springframework.beans.PropertyEditorRegistrar]
+2021-02-02 11:00:30  [ localhost-startStop-1:10386 ] - [ DEBUG ]  Found bean property 'propertyEditorRegistrars' of type [[Lorg.springframework.beans.PropertyEditorRegistrar;]
+2021-02-02 11:00:30  [ localhost-startStop-1:10448 ] - [ DEBUG ]  Found bean property 'validator' of type [org.springframework.validation.Validator]
+2021-02-02 11:00:30  [ localhost-startStop-1:10511 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2021-02-02 11:00:30  [ localhost-startStop-1:10573 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#15b17e8e'
+2021-02-02 11:00:30  [ localhost-startStop-1:10634 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#4d0a364e'
+2021-02-02 11:00:30  [ localhost-startStop-1:10699 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.http.converter.ByteArrayHttpMessageConverter]
+2021-02-02 11:00:30  [ localhost-startStop-1:10767 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.http.converter.ByteArrayHttpMessageConverter]
+2021-02-02 11:00:30  [ localhost-startStop-1:10828 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:30  [ localhost-startStop-1:10874 ] - [ DEBUG ]  Found bean property 'defaultCharset' of type [java.nio.charset.Charset]
+2021-02-02 11:00:30  [ localhost-startStop-1:10925 ] - [ DEBUG ]  Found bean property 'supportedMediaTypes' of type [java.util.List]
+2021-02-02 11:00:30  [ localhost-startStop-1:10973 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#4d0a364e'
+2021-02-02 11:00:31  [ localhost-startStop-1:11034 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#e9ce7eb'
+2021-02-02 11:00:31  [ localhost-startStop-1:11097 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.http.converter.StringHttpMessageConverter]
+2021-02-02 11:00:31  [ localhost-startStop-1:11161 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.http.converter.StringHttpMessageConverter]
+2021-02-02 11:00:31  [ localhost-startStop-1:11226 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:31  [ localhost-startStop-1:11274 ] - [ DEBUG ]  Found bean property 'defaultCharset' of type [java.nio.charset.Charset]
+2021-02-02 11:00:31  [ localhost-startStop-1:11321 ] - [ DEBUG ]  Found bean property 'supportedMediaTypes' of type [java.util.List]
+2021-02-02 11:00:31  [ localhost-startStop-1:11369 ] - [ DEBUG ]  Found bean property 'writeAcceptCharset' of type [boolean]
+2021-02-02 11:00:31  [ localhost-startStop-1:11419 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#e9ce7eb'
+2021-02-02 11:00:31  [ localhost-startStop-1:11481 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#6788ee7a'
+2021-02-02 11:00:31  [ localhost-startStop-1:11545 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.http.converter.ResourceHttpMessageConverter]
+2021-02-02 11:00:31  [ localhost-startStop-1:11609 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.http.converter.ResourceHttpMessageConverter]
+2021-02-02 11:00:31  [ localhost-startStop-1:11670 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:31  [ localhost-startStop-1:11716 ] - [ DEBUG ]  Found bean property 'defaultCharset' of type [java.nio.charset.Charset]
+2021-02-02 11:00:31  [ localhost-startStop-1:11762 ] - [ DEBUG ]  Found bean property 'supportedMediaTypes' of type [java.util.List]
+2021-02-02 11:00:31  [ localhost-startStop-1:11811 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#6788ee7a'
+2021-02-02 11:00:31  [ localhost-startStop-1:11873 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#79064e05'
+2021-02-02 11:00:31  [ localhost-startStop-1:11936 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.http.converter.xml.SourceHttpMessageConverter]
+2021-02-02 11:00:31  [ localhost-startStop-1:12000 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.http.converter.xml.SourceHttpMessageConverter]
+2021-02-02 11:00:32  [ localhost-startStop-1:12061 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:32  [ localhost-startStop-1:12108 ] - [ DEBUG ]  Found bean property 'defaultCharset' of type [java.nio.charset.Charset]
+2021-02-02 11:00:32  [ localhost-startStop-1:12155 ] - [ DEBUG ]  Found bean property 'processExternalEntities' of type [boolean]
+2021-02-02 11:00:32  [ localhost-startStop-1:12201 ] - [ DEBUG ]  Found bean property 'supportDtd' of type [boolean]
+2021-02-02 11:00:32  [ localhost-startStop-1:12247 ] - [ DEBUG ]  Found bean property 'supportedMediaTypes' of type [java.util.List]
+2021-02-02 11:00:32  [ localhost-startStop-1:12294 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#79064e05'
+2021-02-02 11:00:32  [ localhost-startStop-1:12356 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#75a467d0'
+2021-02-02 11:00:32  [ localhost-startStop-1:12423 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter]
+2021-02-02 11:00:32  [ localhost-startStop-1:12489 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter]
+2021-02-02 11:00:32  [ localhost-startStop-1:12552 ] - [ DEBUG ]  Found bean property 'charset' of type [java.nio.charset.Charset]
+2021-02-02 11:00:32  [ localhost-startStop-1:12599 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:32  [ localhost-startStop-1:12646 ] - [ DEBUG ]  Found bean property 'multipartCharset' of type [java.nio.charset.Charset]
+2021-02-02 11:00:32  [ localhost-startStop-1:12694 ] - [ DEBUG ]  Found bean property 'partConverters' of type [java.util.List]
+2021-02-02 11:00:32  [ localhost-startStop-1:12741 ] - [ DEBUG ]  Found bean property 'supportedMediaTypes' of type [java.util.List]
+2021-02-02 11:00:32  [ localhost-startStop-1:12790 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#75a467d0'
+2021-02-02 11:00:32  [ localhost-startStop-1:12851 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#7611f3c4'
+2021-02-02 11:00:32  [ localhost-startStop-1:12915 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter]
+2021-02-02 11:00:32  [ localhost-startStop-1:12984 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter]
+2021-02-02 11:00:33  [ localhost-startStop-1:13046 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:33  [ localhost-startStop-1:13092 ] - [ DEBUG ]  Found bean property 'defaultCharset' of type [java.nio.charset.Charset]
+2021-02-02 11:00:33  [ localhost-startStop-1:13139 ] - [ DEBUG ]  Found bean property 'processExternalEntities' of type [boolean]
+2021-02-02 11:00:33  [ localhost-startStop-1:13185 ] - [ DEBUG ]  Found bean property 'supportDtd' of type [boolean]
+2021-02-02 11:00:33  [ localhost-startStop-1:13232 ] - [ DEBUG ]  Found bean property 'supportedMediaTypes' of type [java.util.List]
+2021-02-02 11:00:33  [ localhost-startStop-1:13280 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#7611f3c4'
+2021-02-02 11:00:33  [ localhost-startStop-1:13345 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#3c80b6e9'
+2021-02-02 11:00:33  [ localhost-startStop-1:13410 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#71dd3181'
+2021-02-02 11:00:33  [ localhost-startStop-1:13475 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean]
+2021-02-02 11:00:33  [ localhost-startStop-1:13543 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean]
+2021-02-02 11:00:33  [ localhost-startStop-1:13605 ] - [ DEBUG ]  Found bean property 'annotationIntrospector' of type [com.fasterxml.jackson.databind.AnnotationIntrospector]
+2021-02-02 11:00:33  [ localhost-startStop-1:13666 ] - [ DEBUG ]  Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2021-02-02 11:00:33  [ localhost-startStop-1:13727 ] - [ DEBUG ]  Found bean property 'autoDetectFields' of type [boolean]
+2021-02-02 11:00:33  [ localhost-startStop-1:13774 ] - [ DEBUG ]  Found bean property 'autoDetectGettersSetters' of type [boolean]
+2021-02-02 11:00:33  [ localhost-startStop-1:13820 ] - [ DEBUG ]  Found bean property 'beanClassLoader' of type [java.lang.ClassLoader]
+2021-02-02 11:00:33  [ localhost-startStop-1:13866 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:33  [ localhost-startStop-1:13912 ] - [ DEBUG ]  Found bean property 'createXmlMapper' of type [boolean]
+2021-02-02 11:00:33  [ localhost-startStop-1:13960 ] - [ DEBUG ]  Found bean property 'dateFormat' of type [java.text.DateFormat]
+2021-02-02 11:00:33  [ localhost-startStop-1:14007 ] - [ DEBUG ]  Found bean property 'defaultTyping' of type [com.fasterxml.jackson.databind.jsontype.TypeResolverBuilder]
+2021-02-02 11:00:34  [ localhost-startStop-1:14070 ] - [ DEBUG ]  Found bean property 'defaultUseWrapper' of type [boolean]
+2021-02-02 11:00:34  [ localhost-startStop-1:14116 ] - [ DEBUG ]  Found bean property 'defaultViewInclusion' of type [boolean]
+2021-02-02 11:00:34  [ localhost-startStop-1:14163 ] - [ DEBUG ]  Found bean property 'deserializers' of type [[Lcom.fasterxml.jackson.databind.JsonDeserializer;]
+2021-02-02 11:00:34  [ localhost-startStop-1:14225 ] - [ DEBUG ]  Found bean property 'deserializersByType' of type [java.util.Map]
+2021-02-02 11:00:34  [ localhost-startStop-1:14272 ] - [ DEBUG ]  Found bean property 'failOnEmptyBeans' of type [boolean]
+2021-02-02 11:00:34  [ localhost-startStop-1:14318 ] - [ DEBUG ]  Found bean property 'failOnUnknownProperties' of type [boolean]
+2021-02-02 11:00:34  [ localhost-startStop-1:14366 ] - [ DEBUG ]  Found bean property 'featuresToDisable' of type [[Ljava.lang.Object;]
+2021-02-02 11:00:34  [ localhost-startStop-1:14412 ] - [ DEBUG ]  Found bean property 'featuresToEnable' of type [[Ljava.lang.Object;]
+2021-02-02 11:00:34  [ localhost-startStop-1:14459 ] - [ DEBUG ]  Found bean property 'filters' of type [com.fasterxml.jackson.databind.ser.FilterProvider]
+2021-02-02 11:00:34  [ localhost-startStop-1:14523 ] - [ DEBUG ]  Found bean property 'findModulesViaServiceLoader' of type [boolean]
+2021-02-02 11:00:34  [ localhost-startStop-1:14569 ] - [ DEBUG ]  Found bean property 'handlerInstantiator' of type [com.fasterxml.jackson.databind.cfg.HandlerInstantiator]
+2021-02-02 11:00:34  [ localhost-startStop-1:14631 ] - [ DEBUG ]  Found bean property 'indentOutput' of type [boolean]
+2021-02-02 11:00:34  [ localhost-startStop-1:14677 ] - [ DEBUG ]  Found bean property 'locale' of type [java.util.Locale]
+2021-02-02 11:00:34  [ localhost-startStop-1:14725 ] - [ DEBUG ]  Found bean property 'mixIns' of type [java.util.Map]
+2021-02-02 11:00:34  [ localhost-startStop-1:14772 ] - [ DEBUG ]  Found bean property 'modules' of type [java.util.List]
+2021-02-02 11:00:34  [ localhost-startStop-1:14820 ] - [ DEBUG ]  Found bean property 'modulesToInstall' of type [[Ljava.lang.Class;]
+2021-02-02 11:00:34  [ localhost-startStop-1:14868 ] - [ DEBUG ]  Found bean property 'object' of type [com.fasterxml.jackson.databind.ObjectMapper]
+2021-02-02 11:00:34  [ localhost-startStop-1:14930 ] - [ DEBUG ]  Found bean property 'objectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper]
+2021-02-02 11:00:34  [ localhost-startStop-1:14992 ] - [ DEBUG ]  Found bean property 'objectType' of type [java.lang.Class]
+2021-02-02 11:00:35  [ localhost-startStop-1:15038 ] - [ DEBUG ]  Found bean property 'propertyNamingStrategy' of type [com.fasterxml.jackson.databind.PropertyNamingStrategy]
+2021-02-02 11:00:35  [ localhost-startStop-1:15101 ] - [ DEBUG ]  Found bean property 'serializationInclusion' of type [com.fasterxml.jackson.annotation.JsonInclude$Include]
+2021-02-02 11:00:35  [ localhost-startStop-1:15163 ] - [ DEBUG ]  Found bean property 'serializers' of type [[Lcom.fasterxml.jackson.databind.JsonSerializer;]
+2021-02-02 11:00:35  [ localhost-startStop-1:15225 ] - [ DEBUG ]  Found bean property 'serializersByType' of type [java.util.Map]
+2021-02-02 11:00:35  [ localhost-startStop-1:15271 ] - [ DEBUG ]  Found bean property 'simpleDateFormat' of type [java.lang.String]
+2021-02-02 11:00:35  [ localhost-startStop-1:15317 ] - [ DEBUG ]  Found bean property 'singleton' of type [boolean]
+2021-02-02 11:00:35  [ localhost-startStop-1:15363 ] - [ DEBUG ]  Found bean property 'timeZone' of type [java.util.TimeZone]
+2021-02-02 11:00:35  [ localhost-startStop-1:15415 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name '(inner bean)#71dd3181'
+2021-02-02 11:00:35  [ localhost-startStop-1:15481 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#71dd3181'
+2021-02-02 11:00:35  [ localhost-startStop-1:15544 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter]
+2021-02-02 11:00:35  [ localhost-startStop-1:15613 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter]
+2021-02-02 11:00:35  [ localhost-startStop-1:15675 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:35  [ localhost-startStop-1:15722 ] - [ DEBUG ]  Found bean property 'defaultCharset' of type [java.nio.charset.Charset]
+2021-02-02 11:00:35  [ localhost-startStop-1:15769 ] - [ DEBUG ]  Found bean property 'jsonPrefix' of type [java.lang.String]
+2021-02-02 11:00:35  [ localhost-startStop-1:15817 ] - [ DEBUG ]  Found bean property 'objectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper]
+2021-02-02 11:00:35  [ localhost-startStop-1:15878 ] - [ DEBUG ]  Found bean property 'prefixJson' of type [boolean]
+2021-02-02 11:00:35  [ localhost-startStop-1:15927 ] - [ DEBUG ]  Found bean property 'prettyPrint' of type [boolean]
+2021-02-02 11:00:35  [ localhost-startStop-1:15973 ] - [ DEBUG ]  Found bean property 'supportedMediaTypes' of type [java.util.List]
+2021-02-02 11:00:36  [ localhost-startStop-1:16022 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#3c80b6e9'
+2021-02-02 11:00:36  [ localhost-startStop-1:16085 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#393fb188'
+2021-02-02 11:00:36  [ localhost-startStop-1:16150 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.mvc.method.annotation.JsonViewRequestBodyAdvice]
+2021-02-02 11:00:36  [ localhost-startStop-1:16216 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.method.annotation.JsonViewRequestBodyAdvice]
+2021-02-02 11:00:36  [ localhost-startStop-1:16277 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:36  [ localhost-startStop-1:16325 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#393fb188'
+2021-02-02 11:00:36  [ localhost-startStop-1:16388 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#4829b936'
+2021-02-02 11:00:36  [ localhost-startStop-1:16452 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.mvc.method.annotation.JsonViewResponseBodyAdvice]
+2021-02-02 11:00:36  [ localhost-startStop-1:16518 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.method.annotation.JsonViewResponseBodyAdvice]
+2021-02-02 11:00:36  [ localhost-startStop-1:16581 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:36  [ localhost-startStop-1:16630 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#4829b936'
+2021-02-02 11:00:36  [ localhost-startStop-1:16693 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2021-02-02 11:00:36  [ localhost-startStop-1:16770 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Feb 02 11:00:20 CST 2021]; root of context hierarchy
+2021-02-02 11:00:36  [ localhost-startStop-1:16952 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2021-02-02 11:00:37  [ localhost-startStop-1:17032 ] - [ DEBUG ]  Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2021-02-02 11:00:37  [ localhost-startStop-1:17093 ] - [ DEBUG ]  Creating instance of bean 'mvcUriComponentsContributor'
+2021-02-02 11:00:37  [ localhost-startStop-1:17155 ] - [ DEBUG ]  Eagerly caching bean 'mvcUriComponentsContributor' to allow for resolving potential circular references
+2021-02-02 11:00:37  [ localhost-startStop-1:17232 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]
+2021-02-02 11:00:37  [ localhost-startStop-1:17296 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]
+2021-02-02 11:00:37  [ localhost-startStop-1:17373 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:37  [ localhost-startStop-1:17419 ] - [ DEBUG ]  Found bean property 'conversionService' of type [org.springframework.core.convert.ConversionService]
+2021-02-02 11:00:37  [ localhost-startStop-1:17480 ] - [ DEBUG ]  Found bean property 'handlerAdapter' of type [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]
+2021-02-02 11:00:37  [ localhost-startStop-1:17543 ] - [ DEBUG ]  Found bean property 'object' of type [org.springframework.web.method.support.CompositeUriComponentsContributor]
+2021-02-02 11:00:37  [ localhost-startStop-1:17606 ] - [ DEBUG ]  Found bean property 'objectType' of type [java.lang.Class]
+2021-02-02 11:00:37  [ localhost-startStop-1:17653 ] - [ DEBUG ]  Found bean property 'singleton' of type [boolean]
+2021-02-02 11:00:37  [ localhost-startStop-1:17701 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#5d09b288'
+2021-02-02 11:00:37  [ localhost-startStop-1:17769 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2021-02-02 11:00:37  [ localhost-startStop-1:17817 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#15b17e8e#1'
+2021-02-02 11:00:37  [ localhost-startStop-1:17880 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2021-02-02 11:00:37  [ localhost-startStop-1:17945 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#15b17e8e#1'
+2021-02-02 11:00:37  [ localhost-startStop-1:18007 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#4d0a364e#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18069 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#4d0a364e#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18132 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#e9ce7eb#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18196 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#e9ce7eb#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18258 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#6788ee7a#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18321 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#6788ee7a#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18374 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#79064e05#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18436 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#79064e05#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18499 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#75a467d0#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18561 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#75a467d0#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18623 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#7611f3c4#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18686 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#7611f3c4#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18748 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#3c80b6e9#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18811 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#71dd3181#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18889 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name '(inner bean)#71dd3181#1'
+2021-02-02 11:00:38  [ localhost-startStop-1:18951 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#71dd3181#1'
+2021-02-02 11:00:39  [ localhost-startStop-1:19013 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#3c80b6e9#1'
+2021-02-02 11:00:39  [ localhost-startStop-1:19076 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#393fb188#1'
+2021-02-02 11:00:39  [ localhost-startStop-1:19138 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#393fb188#1'
+2021-02-02 11:00:39  [ localhost-startStop-1:19201 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#4829b936#1'
+2021-02-02 11:00:39  [ localhost-startStop-1:19263 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#4829b936#1'
+2021-02-02 11:00:39  [ localhost-startStop-1:19325 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name '(inner bean)#5d09b288'
+2021-02-02 11:00:39  [ localhost-startStop-1:19388 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Feb 02 11:00:20 CST 2021]; root of context hierarchy
+2021-02-02 11:00:39  [ localhost-startStop-1:19472 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#5d09b288'
+2021-02-02 11:00:39  [ localhost-startStop-1:19535 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2021-02-02 11:00:39  [ localhost-startStop-1:19597 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'mvcUriComponentsContributor'
+2021-02-02 11:00:39  [ localhost-startStop-1:19659 ] - [ DEBUG ]  Finished creating instance of bean 'mvcUriComponentsContributor'
+2021-02-02 11:00:39  [ localhost-startStop-1:19722 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2021-02-02 11:00:39  [ localhost-startStop-1:19769 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2021-02-02 11:00:39  [ localhost-startStop-1:19847 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2021-02-02 11:00:39  [ localhost-startStop-1:19940 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0' to allow for resolving potential circular references
+2021-02-02 11:00:40  [ localhost-startStop-1:20034 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]
+2021-02-02 11:00:40  [ localhost-startStop-1:20096 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]
+2021-02-02 11:00:40  [ localhost-startStop-1:20159 ] - [ DEBUG ]  Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2021-02-02 11:00:40  [ localhost-startStop-1:20221 ] - [ DEBUG ]  Found bean property 'argumentResolvers' of type [org.springframework.web.method.support.HandlerMethodArgumentResolverComposite]
+2021-02-02 11:00:40  [ localhost-startStop-1:20283 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:40  [ localhost-startStop-1:20330 ] - [ DEBUG ]  Found bean property 'contentNegotiationManager' of type [org.springframework.web.accept.ContentNegotiationManager]
+2021-02-02 11:00:40  [ localhost-startStop-1:20398 ] - [ DEBUG ]  Found bean property 'customArgumentResolvers' of type [java.util.List]
+2021-02-02 11:00:40  [ localhost-startStop-1:20446 ] - [ DEBUG ]  Found bean property 'customReturnValueHandlers' of type [java.util.List]
+2021-02-02 11:00:40  [ localhost-startStop-1:20495 ] - [ DEBUG ]  Found bean property 'exceptionHandlerAdviceCache' of type [java.util.Map]
+2021-02-02 11:00:40  [ localhost-startStop-1:20544 ] - [ DEBUG ]  Found bean property 'mappedHandlerClasses' of type [[Ljava.lang.Class;]
+2021-02-02 11:00:40  [ localhost-startStop-1:20590 ] - [ DEBUG ]  Found bean property 'mappedHandlers' of type [java.util.Set]
+2021-02-02 11:00:40  [ localhost-startStop-1:20637 ] - [ DEBUG ]  Found bean property 'messageConverters' of type [java.util.List]
+2021-02-02 11:00:40  [ localhost-startStop-1:20683 ] - [ DEBUG ]  Found bean property 'order' of type [int]
+2021-02-02 11:00:40  [ localhost-startStop-1:20729 ] - [ DEBUG ]  Found bean property 'preventResponseCaching' of type [boolean]
+2021-02-02 11:00:40  [ localhost-startStop-1:20775 ] - [ DEBUG ]  Found bean property 'responseBodyAdvice' of type [java.util.List]
+2021-02-02 11:00:40  [ localhost-startStop-1:20822 ] - [ DEBUG ]  Found bean property 'returnValueHandlers' of type [org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite]
+2021-02-02 11:00:40  [ localhost-startStop-1:20884 ] - [ DEBUG ]  Found bean property 'warnLogCategory' of type [java.lang.String]
+2021-02-02 11:00:40  [ localhost-startStop-1:20935 ] - [ DEBUG ]  Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2021-02-02 11:00:40  [ localhost-startStop-1:20983 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#4d0a364e#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21045 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#4d0a364e#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21106 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#e9ce7eb#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21168 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#e9ce7eb#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21231 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#6788ee7a#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21293 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#6788ee7a#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21356 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#79064e05#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21419 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#79064e05#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21481 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#75a467d0#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21546 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#75a467d0#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21609 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#7611f3c4#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21673 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#7611f3c4#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21735 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#3c80b6e9#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21796 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#71dd3181#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21858 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name '(inner bean)#71dd3181#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21922 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#71dd3181#2'
+2021-02-02 11:00:41  [ localhost-startStop-1:21984 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#3c80b6e9#2'
+2021-02-02 11:00:42  [ localhost-startStop-1:22048 ] - [ DEBUG ]  Creating instance of bean '(inner bean)#591bf665'
+2021-02-02 11:00:42  [ localhost-startStop-1:22112 ] - [ DEBUG ]  Finished creating instance of bean '(inner bean)#591bf665'
+2021-02-02 11:00:42  [ localhost-startStop-1:22177 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2021-02-02 11:00:42  [ localhost-startStop-1:22254 ] - [ DEBUG ]  Looking for exception mappings: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Feb 02 11:00:20 CST 2021]; root of context hierarchy
+2021-02-02 11:00:42  [ localhost-startStop-1:22348 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2021-02-02 11:00:42  [ localhost-startStop-1:22427 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2021-02-02 11:00:42  [ localhost-startStop-1:22507 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2021-02-02 11:00:42  [ localhost-startStop-1:22585 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0' to allow for resolving potential circular references
+2021-02-02 11:00:42  [ localhost-startStop-1:22662 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver]
+2021-02-02 11:00:42  [ localhost-startStop-1:22728 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver]
+2021-02-02 11:00:42  [ localhost-startStop-1:22793 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:42  [ localhost-startStop-1:22839 ] - [ DEBUG ]  Found bean property 'mappedHandlerClasses' of type [[Ljava.lang.Class;]
+2021-02-02 11:00:42  [ localhost-startStop-1:22885 ] - [ DEBUG ]  Found bean property 'mappedHandlers' of type [java.util.Set]
+2021-02-02 11:00:42  [ localhost-startStop-1:22931 ] - [ DEBUG ]  Found bean property 'messageSource' of type [org.springframework.context.MessageSource]
+2021-02-02 11:00:42  [ localhost-startStop-1:22993 ] - [ DEBUG ]  Found bean property 'order' of type [int]
+2021-02-02 11:00:43  [ localhost-startStop-1:23042 ] - [ DEBUG ]  Found bean property 'preventResponseCaching' of type [boolean]
+2021-02-02 11:00:43  [ localhost-startStop-1:23088 ] - [ DEBUG ]  Found bean property 'warnLogCategory' of type [java.lang.String]
+2021-02-02 11:00:43  [ localhost-startStop-1:23137 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2021-02-02 11:00:43  [ localhost-startStop-1:23215 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2021-02-02 11:00:43  [ localhost-startStop-1:23295 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2021-02-02 11:00:43  [ localhost-startStop-1:23373 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0' to allow for resolving potential circular references
+2021-02-02 11:00:43  [ localhost-startStop-1:23454 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver]
+2021-02-02 11:00:43  [ localhost-startStop-1:23517 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver]
+2021-02-02 11:00:43  [ localhost-startStop-1:23580 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:43  [ localhost-startStop-1:23626 ] - [ DEBUG ]  Found bean property 'mappedHandlerClasses' of type [[Ljava.lang.Class;]
+2021-02-02 11:00:43  [ localhost-startStop-1:23675 ] - [ DEBUG ]  Found bean property 'mappedHandlers' of type [java.util.Set]
+2021-02-02 11:00:43  [ localhost-startStop-1:23722 ] - [ DEBUG ]  Found bean property 'order' of type [int]
+2021-02-02 11:00:43  [ localhost-startStop-1:23769 ] - [ DEBUG ]  Found bean property 'preventResponseCaching' of type [boolean]
+2021-02-02 11:00:43  [ localhost-startStop-1:23816 ] - [ DEBUG ]  Found bean property 'warnLogCategory' of type [java.lang.String]
+2021-02-02 11:00:43  [ localhost-startStop-1:23866 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2021-02-02 11:00:43  [ localhost-startStop-1:23942 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0'
+2021-02-02 11:00:44  [ localhost-startStop-1:24022 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0'
+2021-02-02 11:00:44  [ localhost-startStop-1:24099 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0' to allow for resolving potential circular references
+2021-02-02 11:00:44  [ localhost-startStop-1:24176 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0'
+2021-02-02 11:00:44  [ localhost-startStop-1:24254 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping#0'
+2021-02-02 11:00:44  [ localhost-startStop-1:24334 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping#0'
+2021-02-02 11:00:44  [ localhost-startStop-1:24411 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping#0' to allow for resolving potential circular references
+2021-02-02 11:00:44  [ localhost-startStop-1:24491 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2021-02-02 11:00:44  [ localhost-startStop-1:24553 ] - [ DEBUG ]  Looking for URL mappings in application context: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Feb 02 11:00:20 CST 2021]; root of context hierarchy
+2021-02-02 11:00:44  [ localhost-startStop-1:24646 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2021-02-02 11:00:44  [ localhost-startStop-1:24727 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2021-02-02 11:00:44  [ localhost-startStop-1:24805 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2021-02-02 11:00:44  [ localhost-startStop-1:24882 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2021-02-02 11:00:44  [ localhost-startStop-1:24959 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25035 ] - [ DEBUG ]  Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25116 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25194 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25272 ] - [ DEBUG ]  Rejected bean name 'mvcCorsConfigurations': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25335 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25416 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25495 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25574 ] - [ DEBUG ]  Rejected bean name 'mvcHandlerMappingIntrospector': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25637 ] - [ DEBUG ]  Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25700 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25780 ] - [ DEBUG ]  Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25859 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:25939 ] - [ DEBUG ]  Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2021-02-02 11:00:45  [ localhost-startStop-1:26000 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+2021-02-02 11:00:46  [ localhost-startStop-1:26088 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0': no URL paths identified
+2021-02-02 11:00:46  [ localhost-startStop-1:26165 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0': no URL paths identified
+2021-02-02 11:00:46  [ localhost-startStop-1:26244 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0': no URL paths identified
+2021-02-02 11:00:46  [ localhost-startStop-1:26321 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0': no URL paths identified
+2021-02-02 11:00:46  [ localhost-startStop-1:26399 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping#0': no URL paths identified
+2021-02-02 11:00:46  [ localhost-startStop-1:26477 ] - [ DEBUG ]  Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+2021-02-02 11:00:46  [ localhost-startStop-1:26555 ] - [ DEBUG ]  Returning cached instance of singleton bean '/listAll.do'
+2021-02-02 11:00:46  [ localhost-startStop-1:26602 ] - [ INFO ]  Mapped URL path [/listAll.do] onto handler '/listAll.do'
+2021-02-02 11:00:46  [ localhost-startStop-1:26648 ] - [ DEBUG ]  Returning cached instance of singleton bean '/addNew.do'
+2021-02-02 11:00:46  [ localhost-startStop-1:26696 ] - [ INFO ]  Mapped URL path [/addNew.do] onto handler '/addNew.do'
+2021-02-02 11:00:46  [ localhost-startStop-1:26743 ] - [ DEBUG ]  Returning cached instance of singleton bean '/AddNewForm.do'
+2021-02-02 11:00:46  [ localhost-startStop-1:26790 ] - [ INFO ]  Mapped URL path [/AddNewForm.do] onto handler '/AddNewForm.do'
+2021-02-02 11:00:46  [ localhost-startStop-1:26837 ] - [ DEBUG ]  Returning cached instance of singleton bean '/deleteUser.do'
+2021-02-02 11:00:46  [ localhost-startStop-1:26885 ] - [ INFO ]  Mapped URL path [/deleteUser.do] onto handler '/deleteUser.do'
+2021-02-02 11:00:46  [ localhost-startStop-1:26933 ] - [ DEBUG ]  Returning cached instance of singleton bean '/updateUser.do'
+2021-02-02 11:00:46  [ localhost-startStop-1:26981 ] - [ INFO ]  Mapped URL path [/updateUser.do] onto handler '/updateUser.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27028 ] - [ DEBUG ]  Returning cached instance of singleton bean '/updateUserForm.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27075 ] - [ INFO ]  Mapped URL path [/updateUserForm.do] onto handler '/updateUserForm.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27122 ] - [ DEBUG ]  Returning cached instance of singleton bean '/searchUserForm.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27169 ] - [ INFO ]  Mapped URL path [/searchUserForm.do] onto handler '/searchUserForm.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27215 ] - [ DEBUG ]  Returning cached instance of singleton bean '/searchUser.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27262 ] - [ INFO ]  Mapped URL path [/searchUser.do] onto handler '/searchUser.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27309 ] - [ DEBUG ]  Returning cached instance of singleton bean '/login.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27356 ] - [ INFO ]  Mapped URL path [/login.do] onto handler '/login.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27403 ] - [ DEBUG ]  Returning cached instance of singleton bean '/logout.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27450 ] - [ INFO ]  Mapped URL path [/logout.do] onto handler '/logout.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27497 ] - [ DEBUG ]  Returning cached instance of singleton bean '/loginFailure.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27544 ] - [ INFO ]  Mapped URL path [/loginFailure.do] onto handler '/loginFailure.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27592 ] - [ DEBUG ]  Returning cached instance of singleton bean '/loginForm.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27639 ] - [ INFO ]  Mapped URL path [/loginForm.do] onto handler '/loginForm.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27686 ] - [ DEBUG ]  Returning cached instance of singleton bean '/empMessage.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27735 ] - [ INFO ]  Mapped URL path [/empMessage.do] onto handler '/empMessage.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27783 ] - [ DEBUG ]  Returning cached instance of singleton bean '/echart.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27829 ] - [ INFO ]  Mapped URL path [/echart.do] onto handler '/echart.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27876 ] - [ DEBUG ]  Returning cached instance of singleton bean '/echartApt.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27922 ] - [ INFO ]  Mapped URL path [/echartApt.do] onto handler '/echartApt.do'
+2021-02-02 11:00:47  [ localhost-startStop-1:27968 ] - [ DEBUG ]  Returning cached instance of singleton bean '/test.do'
+2021-02-02 11:00:48  [ localhost-startStop-1:28016 ] - [ INFO ]  Mapped URL path [/test.do] onto handler '/test.do'
+2021-02-02 11:00:48  [ localhost-startStop-1:28065 ] - [ DEBUG ]  Rejected bean name 'environment': no URL paths identified
+2021-02-02 11:00:48  [ localhost-startStop-1:28127 ] - [ DEBUG ]  Rejected bean name 'systemProperties': no URL paths identified
+2021-02-02 11:00:48  [ localhost-startStop-1:28189 ] - [ DEBUG ]  Rejected bean name 'systemEnvironment': no URL paths identified
+2021-02-02 11:00:48  [ localhost-startStop-1:28252 ] - [ DEBUG ]  Rejected bean name 'servletContext': no URL paths identified
+2021-02-02 11:00:48  [ localhost-startStop-1:28313 ] - [ DEBUG ]  Rejected bean name 'servletConfig': no URL paths identified
+2021-02-02 11:00:48  [ localhost-startStop-1:28374 ] - [ DEBUG ]  Rejected bean name 'contextParameters': no URL paths identified
+2021-02-02 11:00:48  [ localhost-startStop-1:28435 ] - [ DEBUG ]  Rejected bean name 'contextAttributes': no URL paths identified
+2021-02-02 11:00:48  [ localhost-startStop-1:28497 ] - [ DEBUG ]  Rejected bean name 'messageSource': no URL paths identified
+2021-02-02 11:00:48  [ localhost-startStop-1:28559 ] - [ DEBUG ]  Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2021-02-02 11:00:48  [ localhost-startStop-1:28621 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping#0'
+2021-02-02 11:00:48  [ localhost-startStop-1:28699 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2021-02-02 11:00:48  [ localhost-startStop-1:28776 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2021-02-02 11:00:48  [ localhost-startStop-1:28864 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
+2021-02-02 11:00:48  [ localhost-startStop-1:28948 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.view.InternalResourceViewResolver]
+2021-02-02 11:00:49  [ localhost-startStop-1:29019 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.view.InternalResourceViewResolver]
+2021-02-02 11:00:49  [ localhost-startStop-1:29082 ] - [ DEBUG ]  Found bean property 'alwaysInclude' of type [boolean]
+2021-02-02 11:00:49  [ localhost-startStop-1:29133 ] - [ DEBUG ]  Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2021-02-02 11:00:49  [ localhost-startStop-1:29195 ] - [ DEBUG ]  Found bean property 'attributes' of type [java.util.Properties]
+2021-02-02 11:00:49  [ localhost-startStop-1:29242 ] - [ DEBUG ]  Found bean property 'attributesMap' of type [java.util.Map]
+2021-02-02 11:00:49  [ localhost-startStop-1:29288 ] - [ DEBUG ]  Found bean property 'cache' of type [boolean]
+2021-02-02 11:00:49  [ localhost-startStop-1:29339 ] - [ DEBUG ]  Found bean property 'cacheLimit' of type [int]
+2021-02-02 11:00:49  [ localhost-startStop-1:29386 ] - [ DEBUG ]  Found bean property 'cacheUnresolved' of type [boolean]
+2021-02-02 11:00:49  [ localhost-startStop-1:29438 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:49  [ localhost-startStop-1:29484 ] - [ DEBUG ]  Found bean property 'contentType' of type [java.lang.String]
+2021-02-02 11:00:49  [ localhost-startStop-1:29533 ] - [ DEBUG ]  Found bean property 'exposeContextBeansAsAttributes' of type [boolean]
+2021-02-02 11:00:49  [ localhost-startStop-1:29580 ] - [ DEBUG ]  Found bean property 'exposePathVariables' of type [java.lang.Boolean]
+2021-02-02 11:00:49  [ localhost-startStop-1:29628 ] - [ DEBUG ]  Found bean property 'exposedContextBeanNames' of type [[Ljava.lang.String;]
+2021-02-02 11:00:49  [ localhost-startStop-1:29675 ] - [ DEBUG ]  Found bean property 'order' of type [int]
+2021-02-02 11:00:49  [ localhost-startStop-1:29722 ] - [ DEBUG ]  Found bean property 'prefix' of type [java.lang.String]
+2021-02-02 11:00:49  [ localhost-startStop-1:29770 ] - [ DEBUG ]  Found bean property 'redirectContextRelative' of type [boolean]
+2021-02-02 11:00:49  [ localhost-startStop-1:29819 ] - [ DEBUG ]  Found bean property 'redirectHosts' of type [[Ljava.lang.String;]
+2021-02-02 11:00:49  [ localhost-startStop-1:29865 ] - [ DEBUG ]  Found bean property 'redirectHttp10Compatible' of type [boolean]
+2021-02-02 11:00:49  [ localhost-startStop-1:29913 ] - [ DEBUG ]  Found bean property 'requestContextAttribute' of type [java.lang.String]
+2021-02-02 11:00:49  [ localhost-startStop-1:29959 ] - [ DEBUG ]  Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+2021-02-02 11:00:49  [ localhost-startStop-1:30005 ] - [ DEBUG ]  Found bean property 'suffix' of type [java.lang.String]
+2021-02-02 11:00:50  [ localhost-startStop-1:30052 ] - [ DEBUG ]  Found bean property 'viewClass' of type [java.lang.Class]
+2021-02-02 11:00:50  [ localhost-startStop-1:30100 ] - [ DEBUG ]  Found bean property 'viewNames' of type [[Ljava.lang.String;]
+2021-02-02 11:00:50  [ localhost-startStop-1:30151 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2021-02-02 11:00:50  [ localhost-startStop-1:30228 ] - [ DEBUG ]  Returning cached instance of singleton bean '/listAll.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30275 ] - [ DEBUG ]  Returning cached instance of singleton bean '/addNew.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30323 ] - [ DEBUG ]  Returning cached instance of singleton bean '/AddNewForm.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30370 ] - [ DEBUG ]  Returning cached instance of singleton bean '/deleteUser.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30417 ] - [ DEBUG ]  Returning cached instance of singleton bean '/updateUser.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30463 ] - [ DEBUG ]  Returning cached instance of singleton bean '/updateUserForm.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30509 ] - [ DEBUG ]  Returning cached instance of singleton bean '/searchUserForm.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30557 ] - [ DEBUG ]  Returning cached instance of singleton bean '/searchUser.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30604 ] - [ DEBUG ]  Returning cached instance of singleton bean '/login.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30651 ] - [ DEBUG ]  Returning cached instance of singleton bean '/logout.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30697 ] - [ DEBUG ]  Returning cached instance of singleton bean '/loginFailure.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30744 ] - [ DEBUG ]  Returning cached instance of singleton bean '/loginForm.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30791 ] - [ DEBUG ]  Returning cached instance of singleton bean '/empMessage.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30837 ] - [ DEBUG ]  Returning cached instance of singleton bean '/echart.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30884 ] - [ DEBUG ]  Returning cached instance of singleton bean '/echartApt.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30932 ] - [ DEBUG ]  Returning cached instance of singleton bean '/test.do'
+2021-02-02 11:00:50  [ localhost-startStop-1:30981 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-02-02 11:00:51  [ localhost-startStop-1:31048 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.context.annotation.ConfigurationClassPostProcessor
+2021-02-02 11:00:51  [ localhost-startStop-1:31111 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor
+2021-02-02 11:00:51  [ localhost-startStop-1:31175 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor
+2021-02-02 11:00:51  [ localhost-startStop-1:31239 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.context.annotation.CommonAnnotationBeanPostProcessor
+2021-02-02 11:00:51  [ localhost-startStop-1:31300 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.context.event.EventListenerMethodProcessor
+2021-02-02 11:00:51  [ localhost-startStop-1:31362 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.context.event.DefaultEventListenerFactory
+2021-02-02 11:00:51  [ localhost-startStop-1:31424 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler
+2021-02-02 11:00:51  [ localhost-startStop-1:31491 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.handler.SimpleUrlHandlerMapping
+2021-02-02 11:00:51  [ localhost-startStop-1:31557 ] - [ DEBUG ]  No @EventListener annotations found on bean class: java.util.LinkedHashMap
+2021-02-02 11:00:51  [ localhost-startStop-1:31605 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping
+2021-02-02 11:00:51  [ localhost-startStop-1:31669 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter
+2021-02-02 11:00:51  [ localhost-startStop-1:31734 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter
+2021-02-02 11:00:51  [ localhost-startStop-1:31796 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.handler.HandlerMappingIntrospector
+2021-02-02 11:00:51  [ localhost-startStop-1:31861 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.accept.ContentNegotiationManager
+2021-02-02 11:00:51  [ localhost-startStop-1:31928 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+2021-02-02 11:00:51  [ localhost-startStop-1:31991 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.format.support.FormattingConversionService
+2021-02-02 11:00:52  [ localhost-startStop-1:32056 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter
+2021-02-02 11:00:52  [ localhost-startStop-1:32123 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.method.support.CompositeUriComponentsContributor
+2021-02-02 11:00:52  [ localhost-startStop-1:32184 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.handler.MappedInterceptor
+2021-02-02 11:00:52  [ localhost-startStop-1:32246 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver
+2021-02-02 11:00:52  [ localhost-startStop-1:32308 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver
+2021-02-02 11:00:52  [ localhost-startStop-1:32370 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver
+2021-02-02 11:00:52  [ localhost-startStop-1:32433 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.servlet.view.InternalResourceViewResolver
+2021-02-02 11:00:52  [ localhost-startStop-1:32494 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.ListAllController
+2021-02-02 11:00:52  [ localhost-startStop-1:32555 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.AddNewController
+2021-02-02 11:00:52  [ localhost-startStop-1:32618 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.AddNewFormController
+2021-02-02 11:00:52  [ localhost-startStop-1:32680 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.DeleteUserController
+2021-02-02 11:00:52  [ localhost-startStop-1:32741 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.UpdateUserController
+2021-02-02 11:00:52  [ localhost-startStop-1:32802 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.UpdateUserFormController
+2021-02-02 11:00:52  [ localhost-startStop-1:32863 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.SearchUserFormController
+2021-02-02 11:00:52  [ localhost-startStop-1:32926 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.SearchUserController
+2021-02-02 11:00:52  [ localhost-startStop-1:32990 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.LoginController
+2021-02-02 11:00:53  [ localhost-startStop-1:33054 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.LogoutController
+2021-02-02 11:00:53  [ localhost-startStop-1:33116 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.LoginFailController
+2021-02-02 11:00:53  [ localhost-startStop-1:33179 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.LoginFormController
+2021-02-02 11:00:53  [ localhost-startStop-1:33242 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.EmpMessageController
+2021-02-02 11:00:53  [ localhost-startStop-1:33304 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.EchartController
+2021-02-02 11:00:53  [ localhost-startStop-1:33366 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.EchartAptController
+2021-02-02 11:00:53  [ localhost-startStop-1:33428 ] - [ DEBUG ]  No @EventListener annotations found on bean class: com.mvc.controller.TestController
+2021-02-02 11:00:53  [ localhost-startStop-1:33492 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.web.context.support.StandardServletEnvironment
+2021-02-02 11:00:53  [ localhost-startStop-1:33581 ] - [ DEBUG ]  No @EventListener annotations found on bean class: java.util.Properties
+2021-02-02 11:00:53  [ localhost-startStop-1:33628 ] - [ DEBUG ]  No @EventListener annotations found on bean class: java.util.Collections$UnmodifiableMap
+2021-02-02 11:00:53  [ localhost-startStop-1:33692 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.apache.catalina.core.ApplicationContextFacade
+2021-02-02 11:00:53  [ localhost-startStop-1:33753 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.apache.catalina.core.StandardWrapperFacade
+2021-02-02 11:00:53  [ localhost-startStop-1:33816 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.context.support.DelegatingMessageSource
+2021-02-02 11:00:53  [ localhost-startStop-1:33878 ] - [ DEBUG ]  No @EventListener annotations found on bean class: org.springframework.context.event.SimpleApplicationEventMulticaster
+2021-02-02 11:00:53  [ localhost-startStop-1:33941 ] - [ DEBUG ]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@15da19d9]
+2021-02-02 11:00:54  [ localhost-startStop-1:34018 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2021-02-02 11:00:54  [ localhost-startStop-1:34065 ] - [ DEBUG ]  Publishing event in WebApplicationContext for namespace 'dispatcher-servlet': org.springframework.context.event.ContextRefreshedEvent[source=WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Feb 02 11:00:20 CST 2021]; root of context hierarchy]
+2021-02-02 11:00:54  [ localhost-startStop-1:34162 ] - [ DEBUG ]  No bean named 'multipartResolver' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@22cededa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,mvcCorsConfigurations,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcHandlerMappingIntrospector,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,/listAll.do,/addNew.do,/AddNewForm.do,/deleteUser.do,/updateUser.do,/updateUserForm.do,/searchUserForm.do,/searchUser.do,/login.do,/logout.do,/loginFailure.do,/loginForm.do,/empMessage.do,/echart.do,/echartApt.do,/test.do]; root of factory hierarchy
+2021-02-02 11:00:54  [ localhost-startStop-1:34628 ] - [ DEBUG ]  Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2021-02-02 11:00:54  [ localhost-startStop-1:34692 ] - [ DEBUG ]  No bean named 'localeResolver' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@22cededa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,mvcCorsConfigurations,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcHandlerMappingIntrospector,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,/listAll.do,/addNew.do,/AddNewForm.do,/deleteUser.do,/updateUser.do,/updateUserForm.do,/searchUserForm.do,/searchUser.do,/login.do,/logout.do,/loginFailure.do,/loginForm.do,/empMessage.do,/echart.do,/echartApt.do,/test.do]; root of factory hierarchy
+2021-02-02 11:00:55  [ localhost-startStop-1:35149 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2021-02-02 11:00:55  [ localhost-startStop-1:35227 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver]
+2021-02-02 11:00:55  [ localhost-startStop-1:35290 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver]
+2021-02-02 11:00:55  [ localhost-startStop-1:35354 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:55  [ localhost-startStop-1:35401 ] - [ DEBUG ]  Found bean property 'defaultLocale' of type [java.util.Locale]
+2021-02-02 11:00:55  [ localhost-startStop-1:35448 ] - [ DEBUG ]  Found bean property 'supportedLocales' of type [java.util.List]
+2021-02-02 11:00:55  [ localhost-startStop-1:35497 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2021-02-02 11:00:55  [ localhost-startStop-1:35574 ] - [ DEBUG ]  Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@7cd909a]
+2021-02-02 11:00:55  [ localhost-startStop-1:35637 ] - [ DEBUG ]  No bean named 'themeResolver' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@22cededa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,mvcCorsConfigurations,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcHandlerMappingIntrospector,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,/listAll.do,/addNew.do,/AddNewForm.do,/deleteUser.do,/updateUser.do,/updateUserForm.do,/searchUserForm.do,/searchUser.do,/login.do,/logout.do,/loginFailure.do,/loginForm.do,/empMessage.do,/echart.do,/echartApt.do,/test.do]; root of factory hierarchy
+2021-02-02 11:00:56  [ localhost-startStop-1:36091 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2021-02-02 11:00:56  [ localhost-startStop-1:36169 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.theme.FixedThemeResolver]
+2021-02-02 11:00:56  [ localhost-startStop-1:36234 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.theme.FixedThemeResolver]
+2021-02-02 11:00:56  [ localhost-startStop-1:36296 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:56  [ localhost-startStop-1:36343 ] - [ DEBUG ]  Found bean property 'defaultThemeName' of type [java.lang.String]
+2021-02-02 11:00:56  [ localhost-startStop-1:36391 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2021-02-02 11:00:56  [ localhost-startStop-1:36469 ] - [ DEBUG ]  Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@7fa57b0f]
+2021-02-02 11:00:56  [ localhost-startStop-1:36531 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2021-02-02 11:00:56  [ localhost-startStop-1:36594 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2021-02-02 11:00:56  [ localhost-startStop-1:36656 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2021-02-02 11:00:56  [ localhost-startStop-1:36717 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping#0'
+2021-02-02 11:00:56  [ localhost-startStop-1:36779 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2021-02-02 11:00:56  [ localhost-startStop-1:36840 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2021-02-02 11:00:56  [ localhost-startStop-1:36903 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2021-02-02 11:00:56  [ localhost-startStop-1:36970 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0'
+2021-02-02 11:00:57  [ localhost-startStop-1:37033 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2021-02-02 11:00:57  [ localhost-startStop-1:37096 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2021-02-02 11:00:57  [ localhost-startStop-1:37158 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2021-02-02 11:00:57  [ localhost-startStop-1:37219 ] - [ DEBUG ]  No bean named 'viewNameTranslator' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@22cededa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,mvcCorsConfigurations,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcHandlerMappingIntrospector,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,/listAll.do,/addNew.do,/AddNewForm.do,/deleteUser.do,/updateUser.do,/updateUserForm.do,/searchUserForm.do,/searchUser.do,/login.do,/logout.do,/loginFailure.do,/loginForm.do,/empMessage.do,/echart.do,/echartApt.do,/test.do]; root of factory hierarchy
+2021-02-02 11:00:57  [ localhost-startStop-1:37678 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2021-02-02 11:00:57  [ localhost-startStop-1:37757 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator]
+2021-02-02 11:00:57  [ localhost-startStop-1:37822 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator]
+2021-02-02 11:00:57  [ localhost-startStop-1:37885 ] - [ DEBUG ]  Found bean property 'alwaysUseFullPath' of type [boolean]
+2021-02-02 11:00:57  [ localhost-startStop-1:37932 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:57  [ localhost-startStop-1:37978 ] - [ DEBUG ]  Found bean property 'prefix' of type [java.lang.String]
+2021-02-02 11:00:58  [ localhost-startStop-1:38025 ] - [ DEBUG ]  Found bean property 'removeSemicolonContent' of type [boolean]
+2021-02-02 11:00:58  [ localhost-startStop-1:38071 ] - [ DEBUG ]  Found bean property 'separator' of type [java.lang.String]
+2021-02-02 11:00:58  [ localhost-startStop-1:38117 ] - [ DEBUG ]  Found bean property 'stripExtension' of type [boolean]
+2021-02-02 11:00:58  [ localhost-startStop-1:38166 ] - [ DEBUG ]  Found bean property 'stripLeadingSlash' of type [boolean]
+2021-02-02 11:00:58  [ localhost-startStop-1:38212 ] - [ DEBUG ]  Found bean property 'stripTrailingSlash' of type [boolean]
+2021-02-02 11:00:58  [ localhost-startStop-1:38258 ] - [ DEBUG ]  Found bean property 'suffix' of type [java.lang.String]
+2021-02-02 11:00:58  [ localhost-startStop-1:38306 ] - [ DEBUG ]  Found bean property 'urlDecode' of type [boolean]
+2021-02-02 11:00:58  [ localhost-startStop-1:38354 ] - [ DEBUG ]  Found bean property 'urlPathHelper' of type [org.springframework.web.util.UrlPathHelper]
+2021-02-02 11:00:58  [ localhost-startStop-1:38413 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2021-02-02 11:00:58  [ localhost-startStop-1:38491 ] - [ DEBUG ]  Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1fe4b429]
+2021-02-02 11:00:58  [ localhost-startStop-1:38570 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2021-02-02 11:00:58  [ localhost-startStop-1:38633 ] - [ DEBUG ]  No bean named 'flashMapManager' found in org.springframework.beans.factory.support.DefaultListableBeanFactory@22cededa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,mvcCorsConfigurations,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcHandlerMappingIntrospector,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,/listAll.do,/addNew.do,/AddNewForm.do,/deleteUser.do,/updateUser.do,/updateUserForm.do,/searchUserForm.do,/searchUser.do,/login.do,/logout.do,/loginFailure.do,/loginForm.do,/empMessage.do,/echart.do,/echartApt.do,/test.do]; root of factory hierarchy
+2021-02-02 11:00:59  [ localhost-startStop-1:39101 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2021-02-02 11:00:59  [ localhost-startStop-1:39179 ] - [ DEBUG ]  Getting BeanInfo for class [org.springframework.web.servlet.support.SessionFlashMapManager]
+2021-02-02 11:00:59  [ localhost-startStop-1:39241 ] - [ DEBUG ]  Caching PropertyDescriptors for class [org.springframework.web.servlet.support.SessionFlashMapManager]
+2021-02-02 11:00:59  [ localhost-startStop-1:39303 ] - [ DEBUG ]  Found bean property 'class' of type [java.lang.Class]
+2021-02-02 11:00:59  [ localhost-startStop-1:39350 ] - [ DEBUG ]  Found bean property 'flashMapTimeout' of type [int]
+2021-02-02 11:00:59  [ localhost-startStop-1:39410 ] - [ DEBUG ]  Found bean property 'urlPathHelper' of type [org.springframework.web.util.UrlPathHelper]
+2021-02-02 11:00:59  [ localhost-startStop-1:39473 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2021-02-02 11:00:59  [ localhost-startStop-1:39549 ] - [ DEBUG ]  Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@43a4fd77]
+2021-02-02 11:00:59  [ localhost-startStop-1:39611 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in PropertySource 'servletConfigInitParams'
+2021-02-02 11:00:59  [ localhost-startStop-1:39673 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in PropertySource 'servletContextInitParams'
+2021-02-02 11:00:59  [ localhost-startStop-1:39734 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in PropertySource 'jndiProperties'
+2021-02-02 11:00:59  [ localhost-startStop-1:39795 ] - [ DEBUG ]  Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2021-02-02 11:00:59  [ localhost-startStop-1:39857 ] - [ DEBUG ]  Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: 名称[spring.liveBeansView.mbeanDomain]未在此上下文中绑定。找不到[spring.liveBeansView.mbeanDomain]。
+2021-02-02 11:00:59  [ localhost-startStop-1:39950 ] - [ DEBUG ]  Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2021-02-02 11:00:59  [ localhost-startStop-1:39996 ] - [ DEBUG ]  JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: 名称[spring.liveBeansView.mbeanDomain]未在此上下文中绑定。找不到[spring.liveBeansView.mbeanDomain]。. Returning null.
+2021-02-02 11:01:00  [ localhost-startStop-1:40073 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties'
+2021-02-02 11:01:00  [ localhost-startStop-1:40135 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemEnvironment'
+2021-02-02 11:01:00  [ localhost-startStop-1:40196 ] - [ DEBUG ]  Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+2021-02-02 11:01:00  [ localhost-startStop-1:40246 ] - [ DEBUG ]  Published WebApplicationContext of servlet 'dispatcher' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcher]
+2021-02-02 11:01:00  [ localhost-startStop-1:40322 ] - [ INFO ]  FrameworkServlet 'dispatcher': initialization completed in 39978 ms
+2021-02-02 11:01:00  [ localhost-startStop-1:40369 ] - [ DEBUG ]  Servlet 'dispatcher' configured successfully
